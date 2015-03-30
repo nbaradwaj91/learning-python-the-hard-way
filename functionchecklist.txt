@@ -1,0 +1,16 @@
+Start a function with a def
+Function name containing words,_,numbers etc
+Open ( right after the name
+Put in the name of arguments inside and make sure that you don't duplicate it.
+Close ) and then end it with a :
+Indent lines of code that you want to be inside the function
+End function with deindenting.
+
+End-Guidelines for making harmonious functions... Remember this and you will do
+well in life ..
+
+Guidelines for making harmonious function calls
+
+Use the same name while calling as you have defined it with
+Include arguments inside () while calling it, whatever you have defined or ... 
+Most important, always remember to call the correct data type. If the variable is defined as an integer then pass an integer while calling it elsewhere. Do necessary conversions when dealing with them. 
