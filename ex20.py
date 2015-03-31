@@ -1,5 +1,3 @@
-# usual import from sys module
-from sys import argv 
 
 script, input_file = argv
 # function defenition print_all using f is passed as a file object. Inside we call the read function associated with f
