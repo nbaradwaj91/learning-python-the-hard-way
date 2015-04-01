@@ -1,0 +1,20 @@
+print command print followed by double quotes.
+Adding comments using the # Octothrope character
+String formatting options the % operator, How is it different for various data types. %d, %i for integers. %f for float. %s for string %r for strings but in debugging mode, Prints out what we have entered in just the same way. %c for character.
+Arithmetic operations + - * and /. Comparing values, >,<,==, >= <= etcetera.
+The boolean data type that can take only two values. True or False.
+The comparison expressions will return a Boolean value. 
+Variables- They can store values. Integer float string and character. using variables in the print statement.
+String formatters %d, s, f, c  will be replaced by values mentioned after the % symbol. multiple varibles are enclosed in % () paranthesis.
+%e, %E, %g Scientific notation. %g only the decimals that are available. 
+You can store string in variables that contain numbers or even other variables using and % formatters.
+adding two string variables just concatenates the string. Doesn't add any space in between
+For printing out multiple characters in the same line such as aaaaaaaa we can do that in the "a" * 10. Wither in the print statement or as a variable. Both would work.
+We can also have a variable as only the formatter such a %d or %r etcetera. We can have as many formatters as possible. Formatted Variables In A String Is The Funda
+The ''' and """ and whatever you type within prints out on the screen. \n new line ESCAPE SEQUENCE. There are many escape sequences, \r, \a and so on. \t for tabbed printing
+raw_input function for accepting inout from the user. It returns a string. You can convert it into integer values for the required use. It has a prompt operator. The prompt is a string.  
+Importing 'features' from the python library. These features are called modules. Basically they are like different scripts that you can include in your script. From them you can import function variables etc. It is always good practice to write the variable as module.variable
+File objects, Returned by the open function. The file object has many attributes and it can be accessed using various functions. These functions are accessed by the file objects. Files should always be closed after opening.
+file.read() reads from the current location and returns a string till eof is reached. If we call them successively, it will return a null string.
+While opening the file we can open it in different modes. open("filename", r) r is for read mode, w is for write mode, w+ and r+ is for both read and write. Only if the file object is assigned to something we need to close the file. otherwise python will do it automatically for us.
+Functions. defined by a def statement followed by a function name and the arguments in between

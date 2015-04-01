@@ -1,0 +1,15 @@
+as
+import *
+for 
+if
+and
+or
+None
+exception
+raise
+path
+abspath
+Difference between os.getcwd() and os.getcwd
+Referential transparency
+The difference between print and return.
+Lists and String. Is a string a list?
