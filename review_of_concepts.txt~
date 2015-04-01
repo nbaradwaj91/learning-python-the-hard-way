@@ -17,4 +17,7 @@ Importing 'features' from the python library. These features are called modules.
 File objects, Returned by the open function. The file object has many attributes and it can be accessed using various functions. These functions are accessed by the file objects. Files should always be closed after opening.
 file.read() reads from the current location and returns a string till eof is reached. If we call them successively, it will return a null string.
 While opening the file we can open it in different modes. open("filename", r) r is for read mode, w is for write mode, w+ and r+ is for both read and write. Only if the file object is assigned to something we need to close the file. otherwise python will do it automatically for us.
-Functions. defined by a def statement followed by a function name and the arguments in between
+Functions. defined by a def statement followed by a function name and the arguments in between. Always end the function by the colon : You can have argument with a *. It tells python to unpack the arguments just like the import command.
+when executing the function use the same name as given in the function defenition. 
+Always remember to pass the same type of variable in the definition. pass an integer if the definiton uses an integer.
+Functions can return a value.
