@@ -13,3 +13,4 @@ Difference between os.getcwd() and os.getcwd
 Referential transparency
 The difference between print and return.
 Lists and String. Is a string a list?
+When you initialize a variable, What value does it take?

@@ -14,3 +14,6 @@ Referential transparency
 The difference between print and return.
 Lists and String. Is a string a list?
 When you initialize a variable, What value does it take?
+Magic functions.
+stuff with __ names.
+Difference between < and __lt__
