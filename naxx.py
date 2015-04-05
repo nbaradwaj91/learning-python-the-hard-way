@@ -28,6 +28,8 @@ def naxxarammas():
 	if choice == 5 and len(check) < 4:
 		print "You can't enter the lair without going through the other quarters"
 		naxxarammas() 
+	elif choice == 5 and len(check) == 4:
+		frostwing_s()
 	if choice == 1:
 		arachnid_q()
 	if choice == 2:
@@ -212,7 +214,138 @@ def construct_q():
 			print "Be more clear dude!"
 
 			
+def frostwing_s():
+	print """
+		So you have bested my creations, and dare lay siege on my own Home!!\n
+		I will crush you! Worthless Mongrels.\n
+		Sapphairon Come to my aid.!!\n
+		Hit RETURN to continue.\n
+		"""
+	
+	raw_input(prompt)	
+
+	print """
+		Sapphairon the great Icy frostwyrm lets out a deadly roar.\n
+		You see someone trapped in a icy tomb in the side of the hall.\n
+		You release his shackles and revive him using druidic magic.\n
+		Hit RETURN to continue.\n
+		"""
+						
+	raw_input(prompt)
+
+	print """
+		The undead introduces himself as Imbadude. A destruction warlock by training.\n
+		As you see saphairon you realize that there are really only two options.\n
+		You could either risk losses in your group and fight Sapphairon or\n
+		ask Imbadude to cast a Chaos Bolt into sapphairon's icy heart which\n
+		can kill it instantly. Fight alone or use the warlock?\n
+		"""
+
+	while True:
+		choice = raw_input(prompt)
+		
+		if "alone" in choice:
+			dead("With a single breath sapphairon sends you and your group to your icy graves!.")
+		elif "warlock" in choice:
+			print """
+				Imbadude conjures a powerful chaos bolt from the twisting nether.\n
+				The chaos bolt hits the dragon and burns the dragon to its very core.\n
+				The dragon then drops a key.
+				Hit RETURN to pick it up.\n
+				"""
+			raw_input(prompt)
+			
+			print """
+				Imbadude agrees to help you in facing the Lich King's necromancer.\n
+				You thank him and Proceed towards his chamber. The Door seems locked.\n
+				You wonder??\n
+				"""
+			while True:
+				key = raw_input(prompt)
+				if "key" in key:
+					break
+				else:
+					print "You should try the key that you picked up from sapphairon.\n"
+
+			frostwing_k()
+
+		else:
+			print "I didn't catch that sorry."
+ 
 				
+
+
+def frostwing_k():
+	print """
+		Kael'Thuzad the Necromancer!!! Sits on his throne!! commanding his undead minions.\n
+		You see his army, consisting of banshees, golems, and skeletons.\n
+		Realizing his soul is linked to his minions, You plan to take out the undead army.\n
+		With your resources, It will be a risk taking on the necromacer and his minions.\n
+		You contemplate on risking it.\n
+		Hit RETURN to continue.\n
+		"""
+	
+	raw_input(prompt)
+
+	print """
+		Imbadude then reveals his story of how he came into Naxxarammas in the search of\n
+		'The Turning Tide'. Kael'Thuzad's famed Blade. Sapphairon had frozen him.\n
+		His voidwalker sacrificed its life to save the master's. Imadude gives the idea\n
+		that his shadowfury could stun Kael'Thuzad's minions which can then be brought down.\n
+		He turns to you and says 'Order me commander.'\n
+		You can either use imba or take on Kael'Thuzad directly\n
+		What do you do	?\n
+		"""
+
+		
+	while True:
+		choice = raw_input(prompt)
+		
+		if "kaelthuzad" in choice:
+			dead("Kael'Thuzad's minions crush your group to pulp.!")
+		elif "imba" in choice:
+			print """
+				Shadowfury is unleashed!! Stunning all Kael'Thuzad's units.\n
+				You burn them down! Destroying a part of Kael'Thuzad's soul.\n
+				The necromancer stops channeling the summoning spell.\n
+				Hit RETURN to continue
+				"""
+			raw_input(prompt)
+			
+			print """
+				He starts channeling frostbolt. You realize that one frostbolt from\n
+				the necromancer will shatter you.\n
+				You have a shield. You are a Warrior\n
+				What do you do?\n
+				"""
+			
+			while True:
+				spell_reflect = raw_input(prompt)
+				
+				if "spell" in spell_reflect:
+					print """
+						Kael'Thuzad's own frostbolt hits him. You can see the fear\n
+						in his eyes. As the great necromancer falls. You can see the\n
+						the suffering of a thousand brave souls who perished under\n
+						his icy grasp. Imbadude looks at Kael'Thuzad's corpse with disgust\n
+						Hit RETURN to continue\n
+						"""
+					raw_input(prompt)
+					
+					print """
+						Imbadude inspects Kael'Thuzad's corpse and pulls out a brilliant\n
+						blue glittering sword. THE TURNING TIDE.\n
+						"""
+
+					dead("You are the conqueror of Naxxarammas")
+				else:
+
+					dead("Kael'Thuzad's Frostbolt shatters you into a thousand pieces")
+
+
+	
+		else:
+			print "Be clear Mon!"
 
 naxxarammas()
 	
